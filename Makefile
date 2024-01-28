@@ -18,7 +18,7 @@ clean  :; forge clean
 # Remove modules
 remove :; rm -rf .gitmodules && rm -rf .git/modules/* && rm -rf lib && touch .gitmodules && git add . && git commit -m "modules"
 
-install :; forge install Cyfrin/foundry-devops@0.1.0 --no-commit && forge install foundry-rs/forge-std@v1.7.4 --no-commit && forge install transmissions11/solmate@v6 --no-commit && forge install openzeppelin/openzeppelin-contracts@v5.0.1 --no-commit && forge install openZeppelin/openzeppelin-contracts-upgradeable@v5.0.1 --no-commit
+install :; forge install Cyfrin/foundry-devops@0.1.0 --no-commit && forge install foundry-rs/forge-std@v1.7.4 --no-commit && forge install transmissions11/solmate@v6 --no-commit && forge install openzeppelin/openzeppelin-contracts@v5.0.1 --no-commit 
 
 # Update Dependencies
 update:; forge update
